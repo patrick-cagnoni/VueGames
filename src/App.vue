@@ -1,28 +1,54 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-app>
+    <minicart />
+    <app-header />
+    <v-main>
+      <products />
+    </v-main>
+    <app-footer />
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Minicart from './components/Minicart';
+import Header from './components/Header';
+import Products from './components/Products';
+import Footer from './components/Footer';
 
 export default {
   name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
 
+  components: {
+    Minicart,
+    AppHeader: Header,
+    Products,
+    AppFooter: Footer
+  }
+};
+</script>
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    font-family: 'Roboto';
+  }
+  .btn-reset {
+    background: none;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+
+    &:hover {
+      background: transparent;
+      box-shadow: 0px 0px 0px transparent;
+      border: 0px solid transparent;
+      text-shadow: 0px 0px 0px transparent;
+    }
+    &:active, &:focus {
+      outline: none;
+      border: none;
+    }
+  }
+  .btn-primary {
+      background-color: #D32F2F !important;
+  }
 </style>
