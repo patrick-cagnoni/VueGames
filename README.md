@@ -1,24 +1,30 @@
-# vuegames
+# Vuegames
 
-## Project setup
+
+## Descrição
+<p align="center">Projeto simples de eCommerce para por em prática ferramentas importantes de construção de interface usando Vue</p>
+
+[Live demo](https://projetovuegames.netlify.app/)
+
+![preview img](https://i.imgur.com/IGQpjTx.png)
+
+## Tecnologias
+
+* Vue
+* Vuex
+* Vuetify
+
+## Instalação
 ```
 yarn install
 ```
 
-### Compiles and hot-reloads for development
+### Compilação e hot-reloads para desenvolvimento
 ```
 yarn serve
 ```
 
-### Compiles and minifies for production
+### Compilação para produção
 ```
 yarn build
 ```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
