@@ -4,7 +4,7 @@
             <h2 class="title">Games</h2>
         </v-row>
         <v-row>
-            <div class="col-sm-4 col-md-3 offset-sm-8 offset-md-9">
+            <div class="orderby-wrapper">
                 <order-by />
             </div>
         </v-row>
@@ -54,6 +54,11 @@ import { mapActions, mapGetters } from 'vuex'
         font-size: 24px;
         padding: 10px;
         border-bottom: 2px solid #000;
+    }
+    .orderby-wrapper {
+        width: 200px;
+        margin-left: auto;
+        padding-top: 20px;
     }
     .shelf {
         display: grid;

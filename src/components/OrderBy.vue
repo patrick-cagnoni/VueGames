@@ -2,6 +2,7 @@
     <v-select 
         :value="orderBy"
         :items="orderByValues"
+        width=200
         @change="setOrderBy"
         outlined
     />
@@ -30,4 +31,8 @@
     }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss">
+    .v-select__selections {
+        width: 200px !important;
+    }
+</style>
