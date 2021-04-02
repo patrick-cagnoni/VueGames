@@ -14,7 +14,7 @@
                 offset-y="16"
             >
                 <v-btn icon @click="openMinicart">
-                    <v-icon large>mdi-cart-variant</v-icon>
+                    <v-icon large color="black">mdi-cart</v-icon>
                 </v-btn>
             </v-badge>
         </div>
